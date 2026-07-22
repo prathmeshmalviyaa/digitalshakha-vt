@@ -1,0 +1,174 @@
+/* Reset and Base Styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    color: #333333;
+    background-color: #faf8f5;
+    line-height: 1.6;
+}
+
+/* Navbar Styling */
+.navbar {
+    background-color: #ffffff;
+    padding: 20px 40px;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.logo {
+    display: inline-block;
+    font-size: 20px;
+    font-weight: bold;
+    color: #1a365d;
+}
+
+.nav-links {
+    float: right;
+    margin-top: 5px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #4a5568;
+    margin-left: 20px;
+    font-weight: 500;
+}
+
+.nav-links a:hover {
+    color: #2b6cb0;
+}
+
+/* Hero Section with Clean Text Visibility Overlay */
+.hero-section {
+    position: relative;
+    width: 100%;
+    min-height: 500px;
+    /* READABILITY TRICK: Multi-layered background combining 60% dark overlay and image */
+    background-image: 
+        linear-gradient(rgba(26, 54, 93, 0.75), rgba(43, 108, 176, 0.75)), 
+        url('https://images.unsplash.com/photo-1524178232363-1fb2b075b655?q=80&w=1600&auto=format&fit=crop');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    
+    /* Centering the content text block inside hero */
+    display: table;
+}
+
+.hero-content {
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+    padding: 80px 20px;
+    color: #ffffff;
+}
+
+.hero-content h1 {
+    font-size: 42px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    letter-spacing: -0.5px;
+}
+
+.hero-content p {
+    font-size: 18px;
+    max-width: 650px;
+    margin: 0 auto 30px auto;
+    opacity: 0.9;
+}
+
+/* Buttons */
+.btn-primary {
+    display: inline-block;
+    background-color: #ecc94b; /* Vibrant Nicepage Gold/Yellow Accent */
+    color: #1a365d;
+    text-decoration: none;
+    padding: 14px 30px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 4px;
+    transition: background 0.2s ease;
+}
+
+.btn-primary:hover {
+    background-color: #d69e2e;
+}
+
+/* Features/Grid Section */
+.features-section {
+    padding: 80px 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.section-title {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.section-title h2 {
+    font-size: 32px;
+    color: #1a365d;
+    margin-bottom: 15px;
+}
+
+.section-title p {
+    color: #718096;
+    font-size: 16px;
+}
+
+/* Robust Layout Structure without using Flex/Grid blocks directly */
+.grid-table {
+    display: table;
+    width: 100%;
+    table-layout: fixed;
+    border-collapse: separate;
+    border-spacing: 20px 0;
+}
+
+.grid-row {
+    display: table-row;
+}
+
+.card {
+    display: table-cell;
+    background: #ffffff;
+    padding: 40px 30px;
+    border-radius: 6px;
+    text-align: center;
+    vertical-align: top;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+    border: 1px solid #edf2f7;
+}
+
+.card-icon {
+    display: block;
+    font-size: 36px;
+    color: #2b6cb0;
+    margin-bottom: 15px;
+}
+
+.card h3 {
+    font-size: 20px;
+    color: #2d3748;
+    margin-bottom: 12px;
+}
+
+.card p {
+    font-size: 14px;
+    color: #718096;
+}
+
+/* Footer styling */
+footer {
+    background-color: #1a365d;
+    color: #a0aec0;
+    text-align: center;
+    padding: 40px 20px;
+    font-size: 14px;
+    margin-top: 60px;
+}
